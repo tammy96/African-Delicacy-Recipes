@@ -9,8 +9,11 @@
 }
 
 body{
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/background3-home.jpg')
-    no-repeat center center/cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/background3-home.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* no-repeat center center/cover; */
     /* color: #fff; */
     /* position: relative; */
     font-family: Roboto;
@@ -46,8 +49,6 @@ p{
     height: 100vh;
     overflow: auto;
     padding:20px;
-    /* border: 2px solid black; */
-    /* display: flex; */
 }
 
 #delight {
