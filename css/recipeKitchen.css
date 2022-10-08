@@ -389,6 +389,7 @@ ul {
     .logo-img {
         width: 100px;
         height: 40px;
+        /* display: none; */
     }
 
     .texxt {
@@ -397,6 +398,7 @@ ul {
 
     .texxt i {
         padding-top: 5px;
+        display: none;
     }
 
     .searchBar input{
@@ -407,6 +409,7 @@ ul {
         margin: 5px;
         width: 120px;
         font-size: 12px;
+        display: none;
     }
 
     #delight {
