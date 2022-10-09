@@ -8,6 +8,21 @@ $(".searches").on("keypress", function(event){
     }
 })
 
+//setting maxlength to input field
+
+$("input").keypress(function(){
+    var maxLength = $(this).val().length;
+    if (maxLength >= 35) {
+        // alert('You cannot enter more than ' + maxLength + ' chars');
+        return false;
+    }
+});
+
+// $("input").on('focus', function()
+//     {
+//         $(this).attr('maxlength','40');
+//     });
+
 // egusi recipe
 
 $("#egusi").on("click", "li", function(){
@@ -33,12 +48,15 @@ $("#egusi").on("click", "span", function(event){
 
 
 $(".egu").keypress(function(event){
+    // $(this).val().maxlength()
     if(event.which === 13){
         var todoText = $(this).val().toLowerCase();
        $(this).val("")
        $("#egusi").append("<li><span><i class='fa fa-trash' aria-hidden='true'></i></span> " + todoText + "</li>");
+       $("#egusi li:gt(9)").remove()
     }
 })
+
 
 // obono recipe
 
@@ -74,6 +92,7 @@ $(".obo").keypress(function(event){
        //create new li and add it to the ul
 
        $("#obono").append("<li><span><i class='fa fa-trash' aria-hidden='true'></i></span> " + todoText + "</li>");
+       $("#obono li:gt(9)").remove()
     }
 })
 
@@ -110,6 +129,7 @@ $(".ban").keypress(function(event){
        $(this).val("")
        //create new li and add it to the ul
        $("#banga").append("<li><span><i class='fa fa-trash' aria-hidden='true'></i></span> " + todoText + "</li>");
+       $("#banga li:gt(9)").remove()
     }
 })
 
@@ -146,6 +166,7 @@ $(".veg").keypress(function(event){
        $(this).val("")
        //create new li and add it to the ul
        $("#vegetable").append("<li><span><i class='fa fa-trash' aria-hidden='true'></i></span> " + todoText + "</li>");
+       $("#vegetable li:gt(9)").remove()
     }
 })
 
@@ -182,6 +203,7 @@ $(".Okro").keypress(function(event){
        $(this).val("")
        //create new li and add it to the ul
        $("#okro").append("<li><span><i class='fa fa-trash' aria-hidden='true'></i></span> " + todoText + "</li>");
+       $("#okro li:gt(9)").remove()
     }
 })
 
@@ -220,5 +242,6 @@ $(".oka").keypress(function(event){
        $(this).val("")
        //create new li and add it to the ul
        $("#Okazi").append("<li><span><i class='fa fa-trash' aria-hidden='true'></i></span> " + todoText + "</li>");
+       $("#Okazi li:gt(9)").remove()
     }
 })

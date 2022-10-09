@@ -37,20 +37,15 @@ p{
     max-width: 1900px;
     overflow: auto;
     padding:20px;
-    display: flex;
-    /* border: 2px solid white; */
-    /* position: absolute; */
 }
 
 .wrapper{
     margin: 30px auto;
     max-width: 1300px;
-    /* height: 100vh; */
     min-height: 100vh;
     position: relative;
     overflow: auto;
     padding:20px;
-    /* border: 2px solid blue; */
 }
 
 #delight {
@@ -62,7 +57,7 @@ p{
 .flex{
     display: flex;
     gap: var(--gap, 1.5rem);
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 
 }
@@ -285,10 +280,7 @@ p{
     /* padding: 10px; */
     border: none;
     outline: none;
-    width: 500px;
-    /* position: absolute; */
-    /* top: auto;
-    left: auto; */
+    width: 400px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 
 }
